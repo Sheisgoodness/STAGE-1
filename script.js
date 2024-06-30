@@ -1,6 +1,4 @@
-// JavaScript for current UTC time and day
 document.addEventListener('DOMContentLoaded', function() {
-    // Display current UTC time and day
     displayCurrentTimeUTC();
     displayCurrentDay();
 });
@@ -10,7 +8,6 @@ function displayCurrentTimeUTC() {
     const now = new Date();
     const options = { timeZone: 'UTC', hour: 'numeric', minute: 'numeric', second: 'numeric' };
 
-    // Format the time string with seconds included
     const timeString = now.toLocaleTimeString('en-US', options);
     currentTimeUTCElement.textContent = `Current Time UTC: ${timeString}`;
 }
@@ -23,5 +20,4 @@ function displayCurrentDay() {
     currentDayElement.textContent = `Current Day: ${dayOfWeek}`;
 }
 
-// Update time every second
 setInterval(displayCurrentTimeUTC, 1000);
