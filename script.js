@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function displayCurrentTimeUTC() {
     const currentTimeUTCElement = document.querySelector('[data-testid="currentTimeUTC"]');
     const now = new Date();
-    const options = { timeZone: 'UTC', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const options = { timeZone: 'UTC', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
 
-    const timeString = now.toLocaleTimeString('en-US', options);
+    const timeString = now.toLocaleTimeString('en-GB', options);
     currentTimeUTCElement.textContent = `Current Time UTC: ${timeString}`;
 }
 

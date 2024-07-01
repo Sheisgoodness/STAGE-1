@@ -61,33 +61,3 @@ a {
 a:hover {
     color: var(--accent-color); 
 }
-
-/*======== Media Queries for Responsive Design ========*/
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        padding: 5px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-}
