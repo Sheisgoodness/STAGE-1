@@ -61,3 +61,33 @@ a {
 a:hover {
     color: var(--accent-color); 
 }
+
+/*====== Media Queries for Responsiveness ======*/
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    main {
+        padding: 10px 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+}
